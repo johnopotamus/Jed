@@ -1,0 +1,16 @@
+
+<body bgcolor="orange">
+
+<h2 style="color:blue">Jedidiah's Website</h2>
+
+<p>My first paragraph.</p>
+<p id= "cats"></p>
+<script>
+var drawCats = function (howManyTimes) {
+	for (var i = 0; i < howManyTimes; i++) {
+		document.getElementById("cats").innerHTML = document.getElementById("cats").innerHTML + "<br>" + (i + 1) + " =^.^=";
+   }
+};
+drawCats(prompt("How many cats should I draw?"));
+</script>
+</body>
